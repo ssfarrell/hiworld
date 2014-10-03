@@ -2,8 +2,8 @@
 using namespace std;
 
 string embolden( string s ){
-  string res = new string;
-  res = string.new("\033[0;1m") << s << string.new("\033[0m");
+  string res;
+  res = "\033[0;1m" + s + "\033[0m";
   return res;
 }
 
